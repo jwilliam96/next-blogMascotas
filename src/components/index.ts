@@ -1,0 +1,7 @@
+export * from "./home/HomeHeader"
+export * from "./home/HomePost"
+export * from "./home/ImageSeparador"
+export * from "./footer/Footer"
+export * from "./header/Header"
+export * from "./topMenu/TopMenu"
+export * from "./card/CardBlog"
