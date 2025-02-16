@@ -2,7 +2,7 @@
 import { CardBlog, Footer, Header } from "@/components";
 import { notFound } from "next/navigation";
 import { blogItems } from "@/lib/data";
-import { BlogID, Params } from "@/interfaces";
+import { Params } from "@/interfaces";
 import Link from "next/link";
 import clsx from "clsx";
 

@@ -1,9 +1,9 @@
 "use client"
 
-import { SvgHuella, sans } from "@/ui";
-import clsx from "clsx";
-import Link from "next/link";
 import { useParams } from "next/navigation";
+import { SvgHuella, sans } from "@/ui";
+import Link from "next/link";
+import clsx from "clsx";
 
 
 export function TopMenu() {
@@ -22,9 +22,14 @@ export function TopMenu() {
             <ul className="flex gap-4 mt-4 sm:gap-6 ss:text-xl md::m-0 cursor-pointer ">
                 {
                     urls.map(url => (
-                        <li key={url}><Link className={clsx("capitalize",
-                            params.blog === url && "underline"
-                        )} href={`/${url}`}>{url}</Link></li>
+                        <li key={url}>
+                            <Link
+                                className={clsx("capitalize hover:underline", params.blog === url && "underline")}
+                                href={`/${url}`}
+                            >
+                                {url}
+                            </Link>
+                        </li>
                     ))
                 }
             </ul>
