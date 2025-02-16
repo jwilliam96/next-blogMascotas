@@ -52,11 +52,11 @@ export default function BlogIdPage({ params }: Params) {
             <div className="max-w-[1200px] px-4 mx-auto mb-8">
                 <figure className="h-[500px] relative">
                     <Image
-                        src={data.image_Url}
-                        width={945}
-                        height={359}
-                        alt="Imagen de mascota"
                         className="w-full h-full object-cover"
+                        alt="Imagen de mascota"
+                        src={data.image_Url}
+                        height={359}
+                        width={945}
                         priority
                     />
                     <div className="absolute bottom-0 left-0 right-0 bg-[#00000088] text-white px-8 py-3">

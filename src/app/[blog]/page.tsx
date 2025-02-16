@@ -37,11 +37,7 @@ export default function BlogPage({ params }: Params) {
     try {
         return (
             <article>
-                <Header className={clsx(
-                    params.blog === "consejos" && "bg-image-consejos",
-                    params.blog === "curiosidades" && "bg-image-curiosidades",
-                    params.blog === "enfermedades" && "bg-image-enfermedades",
-                )} title={`${params.blog.toUpperCase()}`} />
+                <Header searchParams={params.blog} title={`${params.blog.toUpperCase()}`} />
 
                 <div className="max-w-[1200px] mx-auto px-4">
                     <h2 className="text-4xl font-bold py-4 mt-10 capitalize"> {params.blog} </h2>

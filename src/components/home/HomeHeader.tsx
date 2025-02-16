@@ -10,6 +10,7 @@ export function HomeHeader() {
                 className="object-cover"
                 alt='un perro acostado'
                 src={imageHome}
+                priority
                 fill
             />
             <div className="absolute inset-0 bg-black/40 z-20" />
