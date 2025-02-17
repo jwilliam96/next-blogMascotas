@@ -13,10 +13,12 @@ export function HomePost({ data }: Props) {
     return (
         <section className="my-10 grid md:grid-cols-2 md:gap-8">
             <Image
-                className={`w-full rounded-lg h-[300px] object-cover ${+id % 2 === 0 && "md:order-2"}`}
+                className={`w-full rounded-lg h-full object-cover ${+id % 2 === 0 && "md:order-2"}`}
                 src={image_Url}
-                width={800}
-                height={800} alt="un perro" />
+                alt="un perro"
+                height={300}
+                width={468}
+            />
             <div className={`flex flex-col ${+id % 2 === 0 && "order-1"}`}>
                 <h2 className="text-3xl font-bold py-8">{title}</h2>
                 <p className="grow">{description}</p>
